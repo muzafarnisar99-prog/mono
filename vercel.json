@@ -1,19 +1,31 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
-      "has": [{"type": "host", "value": "www.monobenzone.shop"}],
-      "destination": "https://monobenzone.shop/$1",
+      "source": "/what-is-monobenzone",
+      "destination": "/blog/what-is-monobenzone/",
+      "permanent": true
+    },
+    {
+      "source": "/products/monobenzone-crean-20-pack-of-5",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/products/:slug",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/cdn",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/%24%7Bt%7D",
+      "destination": "/",
       "permanent": true
     }
   ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {"key": "X-Content-Type-Options", "value": "nosniff"},
-        {"key": "X-Frame-Options", "value": "DENY"}
-      ]
-    }
-  ]
+  "cleanUrls": true,
+  "trailingSlash": false
 }
