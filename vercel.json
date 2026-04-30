@@ -1,13 +1,9 @@
-{
+
+ {
   "redirects": [
     {
       "source": "/what-is-monobenzone",
       "destination": "/blog/what-is-monobenzone/",
-      "permanent": true
-    },
-    {
-      "source": "/products/monobenzone-crean-20-pack-of-5",
-      "destination": "/",
       "permanent": true
     },
     {
@@ -24,8 +20,11 @@
       "source": "/%24%7Bt%7D",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/blogs/:slug",
+      "destination": "/blog/",
+      "permanent": true
     }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  ]
 }
